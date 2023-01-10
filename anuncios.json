@@ -1,0 +1,39 @@
+{
+  "anuncios": [
+    {
+      "nombre": "Bicicleta",
+      "venta": true,
+      "precio": 95000,
+      "foto": "bici.jpg",
+      "tags": [ "lifestyle", "motor"]
+    },
+    {
+      "nombre": "iPhone 14",
+      "venta": false,
+      "precio": 135000,
+      "foto": "iphone.jpg",
+      "tags": [ "lifestyle", "mobile"]
+    },
+    {
+      "nombre": "Patinete eléctrico",
+      "venta": true,
+      "precio": 80000,
+      "foto": "patinete.jpg",
+      "tags": [ "lifestyle", "motor"]
+    },
+    {
+      "nombre": "Samsung Zflip 4",
+      "venta": true,
+      "precio": 120000,
+      "foto": "samsung.jpg",
+      "tags": [ "lifestyle", "mobile"]
+    },
+    {
+      "nombre": "Ordenador portátil",
+      "venta": false,
+      "precio": 75000,
+      "foto": "notebook.jpg",
+      "tags": [ "lifestyle", "work"]
+    }
+  ]
+}

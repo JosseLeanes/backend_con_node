@@ -1,0 +1,44 @@
+<%- include('_header') %>
+
+
+
+<div class="container">
+  <div>
+      <h1>Listado</h1>
+  </div>
+
+  <div>
+      <table class="table">
+        <thead><tr>
+          <th>Producto</th>
+          <th>Imagen</th>
+          <th>Venta</th>
+          <th>Precio</th>
+          <th>Tags</th>
+        </tr></thead>
+        <tbody>
+<% anuncios.forEach(anuncio => { %>
+          <tr>
+            <td><%= anuncio.nombre %></td>
+            <td><img src="<%= anuncio.foto %>"></td>
+            <td><%= anuncio.venta ? 'Si' : 'No' %></td>
+            <td><%= anuncio.precio / 100 %>€</td>
+            <td><%= anuncio.tags %></td>
+          </tr>
+<% }) %>
+        </tbody>
+      </table>
+
+
+      <ul>
+        <li><a href="?">Todos</a></li>
+        <li><a href="?sort=precio">Precio ascendente</a></li>
+        <li><a href="?sort=-precio">Precio descendente</a></li>
+        <li><a href="?start=2&limit=3">Paginado</a></li>
+      </ul>
+  </div>
+
+  <a href="/">Inicio</a>
+
+</div>
+<%- include('_footer') %>
